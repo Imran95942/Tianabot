@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Здравствуйте! {},*
-*Я {}.*
+*Я BORZ.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 • *Uptime:* `{}`
 • `{}` *users, across* `{}` *chats.*
@@ -636,7 +636,7 @@ Tiana has a additional feature for non-admin users who want to use admin command
 - Get Settings dashboard of a group. You can manage Auth Users Mode. Commands Mode from here.
 
 /ping
-- Ping the Bot and check Ram, Cpu etc stats of Tiana.""",
+- Ping the Bot and check Ram, Cpu etc stats of Borz.""",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="tiana_music")]]
@@ -715,14 +715,14 @@ Support
         )
     elif query.data == "tiana_source":
         query.message.edit_text(
-            text="""*Tianabot is Now Open Source Bot Project.*
+            text="""*Borzbot is Now Open Source Bot Project.*
 
 *Click below Button to Get Source Code.*""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="📄 𝙎𝙤𝙪𝙧𝙘𝙚", url="github.com/Prince-Botz/Tianabot"),                 
+                    InlineKeyboardButton(text="📄 𝙎𝙤𝙪𝙧𝙘𝙚", url="t.me/isIam07"),                 
                     InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="about_"),
                  ]    
                 ]
