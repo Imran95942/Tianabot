@@ -96,11 +96,9 @@ buttons = [
         InlineKeyboardButton(text="❓ 𝘾𝙤𝙢𝙢𝙖𝙣𝙙 𝙃𝙚𝙡𝙥 ❗️", callback_data="tiana_"),
     ],
     [
-        InlineKeyboardButton(text="👩‍💻 𝙄𝙣𝙛𝙤", callback_data="about_"),
         InlineKeyboardButton(text=" Разработчик 👨‍✈️", url=f"https://t.me/{OWNER_USERNAME}"),
     ],
    [
-        InlineKeyboardButton(text="📇 𝙐𝙥𝙙𝙖𝙩𝙚𝙨", url=f"http://t.me/{UPDATE_CHANNEL}"),
         InlineKeyboardButton(text="𝙎𝙪𝙥𝙥𝙤𝙧𝙩 🫂", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [  
