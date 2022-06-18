@@ -82,13 +82,13 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hᴇʟʟᴏ {} * [!]({})
-───────────────────────
-× *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
-× *I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!*
-───────────────────────
-× *Uᴘᴛɪᴍᴇ:* `{}`
-× `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
+*Здравствуйте! {},*
+*Я {}.*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+• *Uptime:* `{}`
+• `{}` *users, across* `{}` *chats.*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+➛ Нажмите /help, чтобы увидеть мои доступные команды ××
 ───────────────────────"""
 
 buttons = [
@@ -97,14 +97,14 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="👩‍💻 𝙄𝙣𝙛𝙤", callback_data="about_"),
-        InlineKeyboardButton(text="𝙊𝙬𝙣𝙚𝙧 👨‍✈️", url=f"https://t.me/{OWNER_USERNAME}"),
+        InlineKeyboardButton(text=" Разработчик 👨‍✈️", url=f"https://t.me/{OWNER_USERNAME}"),
     ],
    [
         InlineKeyboardButton(text="📇 𝙐𝙥𝙙𝙖𝙩𝙚𝙨", url=f"http://t.me/{UPDATE_CHANNEL}"),
         InlineKeyboardButton(text="𝙎𝙪𝙥𝙥𝙤𝙧𝙩 🫂", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [  
-        InlineKeyboardButton(text="➕️ 𝘼𝙙𝙙 𝙢𝙚 𝙩𝙤 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 ➕️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+        InlineKeyboardButton(text="➕️ Добавить в группу ➕️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
     ], 
     
 ]
@@ -247,7 +247,7 @@ def start(update: Update, context: CallbackContext):
                     sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(
                  [
-                  [InlineKeyboardButton(text="📄 Source", url="https://github.com/prince-botz/tianabot"), 
+                  [InlineKeyboardButton(text="📄 Source", url="https://t.me/isIam07"), 
                    InlineKeyboardButton(text="🫂 Support", url=f"https://t.me/{SUPPORT_CHAT}")]
                  ]
               ),
@@ -556,7 +556,7 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
         query.message.edit_text(
             text="""✗*Here is the help for Play Commands*:
 
-*Note*: Tiana Music Bot works on a single merged commands for Music and Video
+*Note*: Borz Music Bot works on a single merged commands for Music and Video
 
 ✗ *Youtube and Telegram Files*:
 
@@ -564,10 +564,10 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
 - Stream Video or Music on Voice Chat by selecting inline Buttons you get
 
 
-✗ *Tiana Database Saved Playlists*:
+✗ *Borz Database Saved Playlists*:
 
 /createplaylist
-- Create Your Playlist on Tiana's Server with Custom Name
+- Create Your Playlist on Borz's Server with Custom Name
 
 /playlist 
 - Check Your Saved Playlist On Servers.
@@ -576,7 +576,7 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
 - Delete any saved music in your playlist
 
 /playplaylist 
-- Start playing Your Saved Playlist on Tiana Servers.""",
+- Start playing Your Saved Playlist on Borz Servers.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
